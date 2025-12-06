@@ -1,7 +1,3 @@
-﻿using Days;
+﻿using AdventOfCode2025;
 
-//var Day = new Day01();
-//var Day = new Day02();
-var Day = new Day03();
-
-Day.Run();
+Day04.Run();

@@ -1,4 +1,4 @@
-﻿namespace Days;
+﻿namespace AdventOfCode2025;
 
 public class Day02
 {
