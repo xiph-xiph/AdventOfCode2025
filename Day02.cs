@@ -2,12 +2,12 @@
 
 public class Day02
 {
-    public void Run()
+    public static void Run()
     {
         Console.WriteLine($"The answer to the first part of the puzzle is {PartOne()}");
         Console.WriteLine($"The answer to the second part of the puzzle is {PartTwo()}");
     }
-    private long PartOne()
+    private static long PartOne()
     {
         string InputPath = Path.Combine(AppContext.BaseDirectory, "./Input/Day02Input.txt");
         StreamReader sr = new(InputPath);
@@ -47,7 +47,7 @@ public class Day02
         return InvalidIDs.Sum();
     }
 
-    private long PartTwo()
+    private static long PartTwo()
     {
         string InputPath = Path.Combine(AppContext.BaseDirectory, "./Input/Day02Input.txt");
         StreamReader sr = new(InputPath);
@@ -93,7 +93,7 @@ public class Day02
         return InvalidIDs.Sum();
     }
 
-    private List<int> GetDivisors(int Input)
+    private static List<int> GetDivisors(int Input)
     {
         List<int> Divisors = new List<int>();
         // start at 2, since we want all divisors higher than 1
@@ -108,7 +108,7 @@ public class Day02
     }
 
     // assumes that length of String is divisible by AmountOfParts
-    private string[] SplitIntoParts(string Input, int AmountOfParts)
+    private static string[] SplitIntoParts(string Input, int AmountOfParts)
     {
         int PartLength = Input.Length / AmountOfParts;
 

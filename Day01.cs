@@ -2,12 +2,12 @@
 
 public class Day01
 {
-    public void Run()
+    public static void Run()
     {
         Console.WriteLine($"The answer to the first part of the puzzle is {PartOne()}");
         Console.WriteLine($"The answer to the second part of the puzzle is {PartTwo()}");
     }
-    private int PartOne()
+    private static int PartOne()
     {
         int Password = 0;
         int Dial = 50;
@@ -43,7 +43,7 @@ public class Day01
         return Password;
     }
 
-    private int PartTwo()
+    private static int PartTwo()
     {
         int Password = 0;
         int Dial = 50;
